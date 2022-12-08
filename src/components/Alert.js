@@ -14,7 +14,6 @@ const StyledBaseAlert = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  fill: ${(props) => (props.color === "warning" ? "1513A0" : "F6F6FE")};
   color: ${(props) => {
     switch (props.color) {
       case "primary":
