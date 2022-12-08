@@ -1,7 +1,7 @@
 import GlobalFonts from "./assets/fonts/fonts";
 
-// import Button from "./components/Button";
-// import { ReactComponent as ArrowIcon } from "./assets/icons/arrow.svg";
+import Button from "./components/Button";
+import { ReactComponent as ArrowIcon } from "./assets/icons/arrow.svg";
 import Alert from "./components/Alert";
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <GlobalFonts />
-      {/* <Button color="primary">
+      <Button color="primary">
         Primary Button
       </Button>
       <Button color="primary" size="large">
@@ -26,27 +26,27 @@ function App() {
       </Button>
       <Button color="primary" disabled>
         Disabled button
-      </Button> */}
+      </Button>
 
       <>
-        <button onClick={handleOpen}>Open alert</button>
+        {/* <button onClick={handleOpen}>Open alert</button>
         {isOpenedAlert && (
           <Alert color="primary" onClose={handleClose}>
             Some text
           </Alert>
-        )}
+        )} */}
         <button onClick={handleOpen}>Open alert</button>
         {isOpenedAlert && (
           <Alert color="error" onClose={handleClose}>
             Some text
           </Alert>
         )}
-        <button onClick={handleOpen}>Open alert</button>
+        {/* <button onClick={handleOpen}>Open alert</button>
         {isOpenedAlert && (
           <Alert color="warning" onClose={handleClose}>
             Some text
           </Alert>
-        )}
+        )} */}
       </>
     </>
   );
