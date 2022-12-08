@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/Button";
+import { ReactComponent as ArrowIcon } from "./assets/icons/arrow.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Button color="primary">
+        <ArrowIcon>Primary button</ArrowIcon>{" "}
+      </Button>
+      <Button color="primary" size="large">
+        Primary large button
+      </Button>
+      <Button color="secondary">
+        <ArrowIcon>Secondary button</ArrowIcon>
+      </Button>
+      <Button color="primary" disabled>
+        <ArrowIcon>Disabled button</ArrowIcon>
+      </Button>
+    </>
   );
 }
 
